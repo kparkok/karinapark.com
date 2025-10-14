@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", monospace;
+  background-color: #0a0a0a;
+  color: #1076a1;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.mode-toggle {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  border-bottom: 2px solid #1076a1;
+}
+
+.mode-toggle button {
+  padding: 0.5rem 1rem;
+  background-color: #0a0a0a;
+  color: #0163b4;
+  border: 1px solid #1076a1;
+  cursor: pointer;
+  font-family: "Courier New", monospace;
+  transition: all 0.3s ease;
+}
+
+.mode-toggle button:hover {
+  background-color: #1076a1;
+  color: #0a0a0a;
+}
+
+.mode-toggle button.active {
+  background-color: #1076a1;
+  color: #0a0a0a;
+}
+
+.terminal-container,
+.portfolio-container {
+  flex: 1;
+  padding: 2rem;
+}
