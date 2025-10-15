@@ -57,7 +57,7 @@ function Portfolio() {
 
             <div style={{ marginLeft: "1.5rem", marginBottom: "2rem" }}>
               <p className="info-line">
-                <span className="info-key">role:</span>{" "}
+                <span className="info-key">roles:</span>{" "}
                 <span className="info-value">
                   "Computer Science Student | Software Developer @ Manoa Now"
                 </span>
@@ -228,6 +228,143 @@ function Portfolio() {
       <div style={{ maxWidth: "64rem", margin: "3rem auto" }}>
         <h2 className="section-title">/ my projects</h2>
         <ProjectCarousel />
+      </div>
+
+      <div style={{ maxWidth: "64rem", margin: "3rem auto" }}>
+        {/* Projects List */}
+        <div style={{ marginTop: "3rem" }}>
+          <div
+            style={{
+              borderTop: "none",
+              padding: "1rem 0",
+            }}
+          >
+            <h3
+              style={{
+                fontSize: "1.125rem",
+                fontWeight: "bold",
+                color: "#1f2937",
+                marginBottom: "0.5rem",
+              }}
+            >
+              Livably | Full-Stack Web Application (powered by AI)
+            </h3>
+            <p
+              style={{
+                color: "#2563eb",
+                fontSize: "0.875rem",
+                fontWeight: "600",
+                marginBottom: "0.75rem",
+              }}
+            >
+              September 2025
+            </p>
+            <p
+              style={{
+                color: "#4b5563",
+                marginBottom: "1rem",
+                lineHeight: "1.6",
+              }}
+            >
+              A webapp powered by AI that helps university students align their
+              shared space living expectations
+            </p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
+              <span className="skill-badge">Typescript</span>
+              <span className="skill-badge">React</span>
+              <span className="skill-badge">Firebase</span>
+              <span className="skill-badge">Gemini AI</span>
+            </div>
+          </div>
+        </div>
+        <div style={{ marginTop: "3rem" }}>
+          <div
+            style={{
+              borderTop: "none",
+              padding: "1rem 0",
+            }}
+          >
+            <h3
+              style={{
+                fontSize: "1.125rem",
+                fontWeight: "bold",
+                color: "#1f2937",
+                marginBottom: "0.5rem",
+              }}
+            >
+              UH Manoa Rideshare | Full-Stack Web Application
+            </h3>
+            <p
+              style={{
+                color: "#2563eb",
+                fontSize: "0.875rem",
+                fontWeight: "600",
+                marginBottom: "0.75rem",
+              }}
+            >
+              November 2024
+            </p>
+            <p
+              style={{
+                color: "#4b5563",
+                marginBottom: "1rem",
+                lineHeight: "1.6",
+              }}
+            >
+              Rideshare App connecting University of Hawaii Students
+            </p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
+              <span className="skill-badge">Typescript</span>
+              <span className="skill-badge">React</span>
+              <span className="skill-badge">PostgreSQL</span>
+              <span className="skill-badge">Node.js</span>
+            </div>
+          </div>
+        </div>
+        <div style={{ marginTop: "3rem" }}>
+          <div
+            style={{
+              borderTop: "none",
+              padding: "1rem 0",
+            }}
+          >
+            <h3
+              style={{
+                fontSize: "1.125rem",
+                fontWeight: "bold",
+                color: "#1f2937",
+                marginBottom: "0.5rem",
+              }}
+            >
+              Inventory Management System | Full-Stack Web Application
+            </h3>
+            <p
+              style={{
+                color: "#2563eb",
+                fontSize: "0.875rem",
+                fontWeight: "600",
+                marginBottom: "0.75rem",
+              }}
+            >
+              May 2025
+            </p>
+            <p
+              style={{
+                color: "#4b5563",
+                marginBottom: "1rem",
+                lineHeight: "1.6",
+              }}
+            >
+              A full-stack inventory system to track inventory across multiple
+              vendors on the UH Manoa campus
+            </p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
+              <span className="skill-badge">JavaScript</span>
+              <span className="skill-badge">HTML</span>
+              <span className="skill-badge">PostgreSQL</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
