@@ -101,12 +101,43 @@ function Portfolio() {
 
       <div style={{ maxWidth: "64rem", margin: "3rem auto" }}>
         <h2 className="section-title">/ about me</h2>
-        {/* Add your about content here */}
-        <p style={{ marginTop: "1.5rem" }}>
-          I am studying for a B.S. in Computer Science in the Department of
-          Information and Computer Sciences at the University of Hawaii.
-          Graduating Spring 2026!
-        </p>
+        <div
+          style={{
+            display: "flex",
+            gap: "2rem",
+            alignItems: "center",
+            marginTop: "1.5rem",
+          }}
+        >
+          <div style={{ flex: 1 }}>
+            <p style={{ marginTop: "1.5rem" }}>
+              I am studying for a B.S. in Computer Science in the Department of
+              Information and Computer Sciences at the University of Hawaii,
+              graduating Spring 2026.
+            </p>
+            <p style={{ marginTop: "1.5rem" }}>
+              I'm a Software Engineer who's excited and passionate about
+              building solutions that connect, empower, and solve real problems.
+            </p>
+            <p style={{ marginTop: "1.5rem" }}>
+              I'm especially interested in exploring how AI can enhance human
+              connection rather than replace it, and I'd love to discuss that
+              perspective with you!
+            </p>
+          </div>
+
+          <div style={{ flex: "0 0 300px" }}>
+            <img
+              src="/images/projects/ParkKarina.jpeg"
+              alt="Your name"
+              style={{
+                width: "100%",
+                borderRadius: "8px",
+                boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+              }}
+            />
+          </div>
+        </div>
 
         <h4 style={{ marginTop: "1.5rem" }}>Recent Technologies:</h4>
         <ul>
