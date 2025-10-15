@@ -1,12 +1,26 @@
-* {
+/* Reset only specific elements, not all descendants */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
   margin: 0;
   padding: 0;
+}
+
+* {
   box-sizing: border-box;
 }
 
 body {
   font-family: "Courier New", monospace;
-  background-color: #0a0a0a;
+  background-color: #ffffff;
   color: #1076a1;
   min-height: 100vh;
 }
@@ -25,13 +39,13 @@ body {
   display: flex;
   gap: 1rem;
   padding: 1rem;
-  background-color: #1a1a1a;
+  background-color: #eaeaea;
   border-bottom: 2px solid #1076a1;
 }
 
 .mode-toggle button {
   padding: 0.5rem 1rem;
-  background-color: #0a0a0a;
+  background-color: #ffffff;
   color: #0163b4;
   border: 1px solid #1076a1;
   cursor: pointer;
@@ -52,5 +66,5 @@ body {
 .terminal-container,
 .portfolio-container {
   flex: 1;
-  padding: 2rem;
+  padding: 0;
 }
