@@ -1,0 +1,219 @@
+.portfolio-page {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  font-family: "Courier New", monospace;
+  padding: 2rem;
+}
+
+/* Terminal Window Styles */
+.terminal-window {
+  max-width: 64rem;
+  margin: 0 auto;
+  background-color: white;
+  border: 2px solid #d1d5db;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.terminal-header {
+  background-color: #f3f4f6;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 2px solid #d1d5db;
+}
+
+.terminal-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.terminal-button {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+}
+
+.terminal-button.red {
+  background-color: #ef4444;
+}
+
+.terminal-button.yellow {
+  background-color: #eab308;
+}
+
+.terminal-button.green {
+  background-color: #22c55e;
+}
+
+.terminal-prompt {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-left: 1rem;
+}
+
+.terminal-content {
+  padding: 2rem;
+  background-color: white;
+}
+
+.terminal-command {
+  color: #059669;
+  margin-bottom: 1.5rem;
+}
+
+.terminal-command .prompt-symbol {
+  color: #9ca3af;
+}
+
+/* Typography */
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2563eb;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+.info-line {
+  font-size: 1.125rem;
+  color: #374151;
+  margin-bottom: 0.5rem;
+  margin-left: 1.5rem;
+}
+
+.info-key {
+  color: #7c3aed;
+  font-weight: 600;
+}
+
+.info-value {
+  color: #ea580c;
+}
+
+/* Buttons */
+.btn-primary-terminal {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-weight: bold;
+  border: none;
+  transition: background-color 0.2s;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary-terminal:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-outline-terminal {
+  background-color: transparent;
+  color: #2563eb;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-weight: bold;
+  border: 2px solid #2563eb;
+  transition: all 0.2s;
+}
+
+.btn-outline-terminal:hover {
+  background-color: #2563eb;
+  color: white;
+}
+
+/* Cursor Animation */
+.cursor {
+  color: #2563eb;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Section Styles */
+.section {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2563eb;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #2563eb;
+  padding-top: 0rem;
+  display: inline-block;
+}
+
+/* Project Cards */
+.project-card {
+  background-color: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: #2563eb;
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.1);
+}
+
+/* Skills Badges */
+.skill-badge {
+  background-color: #dbeafe;
+  color: #1e40af;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: inline-block;
+  margin: 0.25rem;
+}
+
+/* Utility Classes */
+.text-muted {
+  color: #6b7280;
+}
+
+.text-primary {
+  color: #2563eb;
+}
+
+.project-window {
+  max-width: 64rem;
+  margin: 0 auto;
+  background-color: white;
+  border: 2px solid #d1d5db;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.project-description {
+  color: #0363fe;
+  font-weight: 1000;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
