@@ -106,11 +106,11 @@ function Portfolio() {
             display: "flex",
             gap: "2rem",
             alignItems: "center",
-            marginTop: "1.5rem",
+            marginTop: "0rem",
           }}
         >
           <div style={{ flex: 1 }}>
-            <p style={{ marginTop: "1.5rem" }}>
+            <p style={{ marginTop: "1rem" }}>
               I am studying for a B.S. in Computer Science in the Department of
               Information and Computer Sciences at the University of Hawaii,
               graduating Spring 2026.
