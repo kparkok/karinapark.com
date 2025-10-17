@@ -8,10 +8,22 @@ jobs:
       - name: 🚚 Get latest code
         uses: actions/checkout@v4
 
+      - name: 🔧 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: 📦 Install dependencies
+        run: npm install
+
+      - name: 🏗️ Build project
+        run: npm run build
+
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ftp.karinapark.com
           username: github@karinapark.com
           password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
           dangerous-clean-slate: true
