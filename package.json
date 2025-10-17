@@ -21,6 +21,7 @@
   "homepage": "https://github.com/kparkok/terminal-portfolio#readme",
   "dependencies": {
     "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1",
     "lucide-react": "^0.546.0",
     "react": "^19.2.0",
     "react-bootstrap": "^2.10.10",

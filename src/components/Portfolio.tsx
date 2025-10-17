@@ -1,9 +1,10 @@
 import "./Portfolio.css";
 import { useState } from "react";
 import ProjectCarousel from "./ProjectCarousel";
-import { Bold, Maximize2 } from "lucide-react";
+import { Github, Maximize2 } from "lucide-react";
 import TypeIt from "typeit-react";
 import Footer from "./Footer";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 function Portfolio() {
   const [expandedRole, setExpandedRole] = useState<number | null>(null);
@@ -90,8 +91,8 @@ function Portfolio() {
               style={{
                 display: "flex",
                 gap: "1rem",
-                marginTop: "4rem",
-                marginBottom: "4rem",
+                marginTop: "3rem",
+                marginBottom: "2rem",
                 flexWrap: "wrap",
                 justifyContent: "center",
               }}
@@ -105,12 +106,42 @@ function Portfolio() {
                 View My Resume
               </a>
             </div>
+            {/* Links */}
+            <div>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "1rem",
+                  marginTop: "0rem",
+                  flexWrap: "wrap",
+                  justifyContent: "center",
+                  fontSize: "1.5rem",
+                }}
+              >
+                <a
+                  href="https://github.com/kparkok"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="bi bi-github"></i>
+                </a>
+                <a
+                  href="https://linkedin.com/in/kparkokuna"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="bi bi-linkedin"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <div style={{ maxWidth: "64rem", margin: "3rem auto" }}>
-        <h2 className="section-title">/ about me</h2>
+        <h2 className="section-title" id="about">
+          / about me
+        </h2>
         <div
           style={{
             display: "flex",
@@ -168,7 +199,9 @@ function Portfolio() {
       </div>
       {/* Dropdown Roles Section */}
       <div style={{ maxWidth: "64rem", margin: "3rem auto" }}>
-        <h2 className="section-title">/ experience</h2>
+        <h2 className="section-title" id="experience">
+          / experience
+        </h2>
         {/* Roles List with Dropdowns */}
         <div style={{ marginTop: "1rem" }}>
           {roles.map((role, index) => (
@@ -275,8 +308,7 @@ function Portfolio() {
         </div>
       </div>
       {/* Projects */}
-
-      <div style={{ maxWidth: "64rem", margin: "3rem auto" }}>
+      <div id="projects" style={{ maxWidth: "64rem", margin: "3rem auto" }}>
         <h2 className="section-title">/ my projects</h2>
         <div style={{ marginTop: "2rem" }}>
           <ProjectCarousel />
@@ -302,6 +334,22 @@ function Portfolio() {
               }}
             >
               Livably | Full-Stack Web Application (powered by AI)
+              <a
+                href="https://github.com/kparkok/livably"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontSize: "2rem", paddingLeft: "1rem" }}
+              >
+                <i className="bi bi-github"></i>
+              </a>
+              <a
+                href="https://roomate-contract.web.app/ "
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontSize: "2rem", paddingLeft: "1rem" }}
+              >
+                <i className="bi bi-link-45deg"></i>
+              </a>
             </h3>
             <p
               style={{
@@ -324,6 +372,7 @@ function Portfolio() {
               A webapp powered by AI that helps university students align their
               shared space living expectations
             </p>
+
             <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
               <span className="skill-badge">Typescript</span>
               <span className="skill-badge">React</span>
@@ -349,7 +398,16 @@ function Portfolio() {
               }}
             >
               UH Manoa Rideshare | Full-Stack Web Application
+              <a
+                href="https://github.com/UH-Uber/UH-Uber-SourceCode"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontSize: "2rem", paddingLeft: "1rem" }}
+              >
+                <i className="bi bi-github"></i>
+              </a>
             </h3>
+
             <p
               style={{
                 color: "#2563eb",

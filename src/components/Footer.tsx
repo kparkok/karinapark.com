@@ -12,7 +12,8 @@ function Footer() {
         fontSize: "0.875rem",
       }}
     >
-      Built by Karina Park © {new Date().getFullYear()} All rights reserved.
+      <div>Built by Karina Park © {new Date().getFullYear()}</div>
+      <div>All rights reserved.</div>
     </footer>
   );
 }
