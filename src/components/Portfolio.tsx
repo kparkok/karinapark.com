@@ -4,7 +4,6 @@ import ProjectCarousel from "./ProjectCarousel";
 import { Bold, Maximize2 } from "lucide-react";
 import TypeIt from "typeit-react";
 import Footer from "./Footer";
-import { FaGithub } from "react-icons/fa";
 
 function Portfolio() {
   const [expandedRole, setExpandedRole] = useState<number | null>(null);
@@ -127,7 +126,7 @@ function Portfolio() {
               graduating Spring 2026.
             </p>
             <p style={{ marginTop: "1.5rem" }}>
-              I'm a Software Engineer who's excited and passionate about
+              I'm a Software Developer who's excited and passionate about
               building solutions that connect, empower, and solve real problems.
             </p>
             <h3 className="technologies" style={{ marginTop: "1.5rem" }}>
