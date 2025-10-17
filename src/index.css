@@ -20,8 +20,7 @@ li {
 
 body {
   font-family: "Courier New", monospace;
-  background-color: #ffffff;
-  color: #1076a1;
+  color: #000000;
   min-height: 100vh;
 }
 
@@ -39,7 +38,7 @@ body {
   display: flex;
   gap: 1rem;
   padding: 1rem;
-  background-color: #eaeaea;
+  background-color: #ffffff;
   border-bottom: 2px solid #1076a1;
 }
 

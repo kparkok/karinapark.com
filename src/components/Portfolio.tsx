@@ -1,6 +1,8 @@
 import "./Portfolio.css";
 import { useState } from "react";
 import ProjectCarousel from "./ProjectCarousel";
+import { Bold, Maximize2 } from "lucide-react";
+import TypeIt from "typeit-react";
 
 function Portfolio() {
   const [expandedRole, setExpandedRole] = useState<number | null>(null);
@@ -41,36 +43,44 @@ function Portfolio() {
             <div className="terminal-button yellow"></div>
             <div className="terminal-button green"></div>
           </div>
-          <span className="terminal-prompt">user@portfolio:~$</span>
-        </div>
 
-        {/* Terminal Content */}
-        <div className="terminal-content">
-          {/* Command */}
-          <div className="terminal-command">
-            <span className="prompt-symbol">$</span> cat introduction.txt
+          {/* Search Bar */}
+          <div className="terminal-search-bar">
+            <span className="lock-icon">🔒</span>
+            <span className="url-text">karinapark.com</span>
           </div>
 
+          <div className="terminal-maximize">
+            <Maximize2 size={14} />
+          </div>
+        </div>
+        {/* Window Content */}
+        <div className="terminal-content">
           {/* Output */}
           <div>
-            <h1 className="hero-title">&gt; Hi, I'm Karina!</h1>
-
-            <div style={{ marginLeft: "1.5rem", marginBottom: "2rem" }}>
+            <h1 className="hero-title">
+              <TypeIt
+                options={{
+                  speed: 100,
+                  waitUntilVisible: true,
+                }}
+              >
+                Hi, I'm Karina!&nbsp;
+              </TypeIt>
+            </h1>
+            <div
+              style={{
+                marginLeft: "1.5rem",
+                marginTop: "3rem",
+                marginBottom: "2rem",
+              }}
+            >
               <p className="info-line">
-                <span className="info-key">roles:</span>{" "}
                 <span className="info-value">
-                  "Computer Science Student | Software Developer @ Manoa Now"
+                  Computer Science Student @ University of Hawaiʻi at Mānoa
+                  <br />
+                  Software Developer @ Mānoa Now
                 </span>
-              </p>
-              <p className="info-line">
-                <span className="info-key">interests:</span>{" "}
-                <span className="info-value">
-                  ["Full-Stack Dev", "AI/ML", "Problem Solving"]
-                </span>
-              </p>
-              <p className="info-line">
-                <span className="info-key">status:</span>{" "}
-                <span className="info-value">"Open to opportunities"</span>
               </p>
             </div>
 
@@ -79,21 +89,20 @@ function Portfolio() {
               style={{
                 display: "flex",
                 gap: "1rem",
-                marginTop: "2rem",
+                marginTop: "4rem",
+                marginBottom: "4rem",
                 flexWrap: "wrap",
+                justifyContent: "center",
               }}
             >
-              <button className="btn-primary-terminal">
-                ./view_projects.sh
-              </button>
-              <button className="btn-outline-terminal">
-                git commit -m "contact"
-              </button>
-            </div>
-
-            {/* Cursor */}
-            <div style={{ marginTop: "1.5rem" }}>
-              <span className="cursor">▋</span>
+              <a
+                href="/CSLinkedIn.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary-terminal"
+              >
+                View My Resume
+              </a>
             </div>
           </div>
         </div>
@@ -109,7 +118,7 @@ function Portfolio() {
             marginTop: "0rem",
           }}
         >
-          <div style={{ flex: 1 }}>
+          <div className="info-value" style={{ flex: 1 }}>
             <p style={{ marginTop: "1rem" }}>
               I am studying for a B.S. in Computer Science in the Department of
               Information and Computer Sciences at the University of Hawaii,
@@ -119,10 +128,27 @@ function Portfolio() {
               I'm a Software Engineer who's excited and passionate about
               building solutions that connect, empower, and solve real problems.
             </p>
+            <h3 className="technologies" style={{ marginTop: "1.5rem" }}>
+              Recent Technologies:
+            </h3>
+            <p className="technology-type" style={{ marginTop: "0.5rem" }}>
+              - TypeScript
+            </p>
+            <p className="technology-type" style={{ marginTop: "0.5rem" }}>
+              - React
+            </p>
+            <p className="technology-type" style={{ marginTop: "0.5rem" }}>
+              - Python
+            </p>
             <p style={{ marginTop: "1.5rem" }}>
-              I'm especially interested in exploring how AI can enhance human
-              connection rather than replace it, and I'd love to discuss that
-              perspective with you!
+              <span className="info-key">My Interests:</span>{" "}
+              <span className="info-value">
+                Full-Stack Dev, AI/ML, Problem Solving
+              </span>
+            </p>
+            <p style={{ marginTop: "1.5rem" }}>
+              <span className="info-key">My Status:</span>{" "}
+              <span className="info-value">Open to new opportunities!</span>
             </p>
           </div>
 
@@ -138,19 +164,12 @@ function Portfolio() {
             />
           </div>
         </div>
-
-        <h4 style={{ marginTop: "1.5rem" }}>Recent Technologies:</h4>
-        <ul>
-          <li style={{ marginTop: "0.5rem" }}>JavaScript</li>
-          <li style={{ marginTop: "0.5rem" }}>JavaScript</li>
-          <li style={{ marginTop: "0.5rem" }}>JavaScript</li>
-        </ul>
       </div>
-      {/* NEW: Dropdown Roles Section */}
+      {/* Dropdown Roles Section */}
       <div style={{ maxWidth: "64rem", margin: "3rem auto" }}>
         <h2 className="section-title">/ experience</h2>
         {/* Roles List with Dropdowns */}
-        <div style={{ marginTop: "0rem" }}>
+        <div style={{ marginTop: "1rem" }}>
           {roles.map((role, index) => (
             <div
               key={role.id}
@@ -258,7 +277,9 @@ function Portfolio() {
 
       <div style={{ maxWidth: "64rem", margin: "3rem auto" }}>
         <h2 className="section-title">/ my projects</h2>
-        <ProjectCarousel />
+        <div style={{ marginTop: "2rem" }}>
+          <ProjectCarousel />
+        </div>
       </div>
 
       <div style={{ maxWidth: "64rem", margin: "3rem auto" }}>
@@ -276,6 +297,7 @@ function Portfolio() {
                 fontWeight: "bold",
                 color: "#1f2937",
                 marginBottom: "0.5rem",
+                textDecoration: "underline",
               }}
             >
               Livably | Full-Stack Web Application (powered by AI)
@@ -291,6 +313,7 @@ function Portfolio() {
               September 2025
             </p>
             <p
+              className="info-value"
               style={{
                 color: "#4b5563",
                 marginBottom: "1rem",
@@ -321,6 +344,7 @@ function Portfolio() {
                 fontWeight: "bold",
                 color: "#1f2937",
                 marginBottom: "0.5rem",
+                textDecoration: "underline",
               }}
             >
               UH Manoa Rideshare | Full-Stack Web Application
@@ -336,6 +360,7 @@ function Portfolio() {
               November 2024
             </p>
             <p
+              className="info-value"
               style={{
                 color: "#4b5563",
                 marginBottom: "1rem",
@@ -365,6 +390,7 @@ function Portfolio() {
                 fontWeight: "bold",
                 color: "#1f2937",
                 marginBottom: "0.5rem",
+                textDecoration: "underline",
               }}
             >
               Inventory Management System | Full-Stack Web Application
@@ -380,6 +406,7 @@ function Portfolio() {
               May 2025
             </p>
             <p
+              className="info-value"
               style={{
                 color: "#4b5563",
                 marginBottom: "1rem",

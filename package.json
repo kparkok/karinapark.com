@@ -21,9 +21,11 @@
   "homepage": "https://github.com/kparkok/terminal-portfolio#readme",
   "dependencies": {
     "bootstrap": "^5.3.8",
+    "lucide-react": "^0.546.0",
     "react": "^19.2.0",
     "react-bootstrap": "^2.10.10",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "typeit-react": "^2.7.8"
   },
   "devDependencies": {
     "@types/react": "^19.2.2",
