@@ -8,12 +8,10 @@ jobs:
       - name: 🚚 Get latest code
         uses: actions/checkout@v4
 
-- name: 📂 Sync files
-  uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-  with:
-    server: ftp.karinapark.com
-    username: github@karinapark.com
-    password: ${{ secrets.FTP_PASSWORD }}
-    exclude: |
-      **/.git*
-      **/.git*/**
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ftp.karinapark.com
+          username: github@karinapark.com
+          password: ${{ secrets.FTP_PASSWORD }}
+          dangerous-clean-slate: true
