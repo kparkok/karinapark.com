@@ -36,7 +36,7 @@ function App() {
             style={{
               fontSize: "0.9rem",
               fontWeight: "500",
-              color: mode === "terminal" ? "#198754" : "#6c757d",
+              color: mode === "terminal" ? "#1076a1" : "#6c757d",
             }}
           >
             Terminal
@@ -47,7 +47,7 @@ function App() {
             style={{
               width: "60px",
               height: "30px",
-              backgroundColor: mode === "portfolio" ? "#198754" : "#6c757d",
+              backgroundColor: mode === "portfolio" ? "#1076a1" : "#6c757d",
               borderRadius: "15px",
               position: "relative",
               cursor: "pointer",
@@ -74,7 +74,7 @@ function App() {
             style={{
               fontSize: "0.9rem",
               fontWeight: "500",
-              color: mode === "portfolio" ? "#198754" : "#6c757d",
+              color: mode === "portfolio" ? "#1076a1" : "#6c757d",
             }}
           >
             Portfolio
