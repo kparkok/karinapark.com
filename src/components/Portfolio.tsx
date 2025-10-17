@@ -3,6 +3,8 @@ import { useState } from "react";
 import ProjectCarousel from "./ProjectCarousel";
 import { Bold, Maximize2 } from "lucide-react";
 import TypeIt from "typeit-react";
+import Footer from "./Footer";
+import { FaGithub } from "react-icons/fa";
 
 function Portfolio() {
   const [expandedRole, setExpandedRole] = useState<number | null>(null);
@@ -416,7 +418,14 @@ function Portfolio() {
               A full-stack inventory system to track inventory across multiple
               vendors on the UH Manoa campus
             </p>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                marginBottom: "5rem",
+                gap: "0.5rem",
+              }}
+            >
               <span className="skill-badge">JavaScript</span>
               <span className="skill-badge">HTML</span>
               <span className="skill-badge">PostgreSQL</span>
@@ -424,6 +433,7 @@ function Portfolio() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

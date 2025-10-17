@@ -4,7 +4,7 @@ import Terminal from "./components/Terminal";
 import Portfolio from "./components/Portfolio";
 
 function App() {
-  const [mode, setMode] = useState<"terminal" | "portfolio">("terminal");
+  const [mode, setMode] = useState<"terminal" | "portfolio">("portfolio");
 
   const toggleMode = () => {
     setMode(mode === "terminal" ? "portfolio" : "terminal");

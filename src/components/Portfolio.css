@@ -3,6 +3,7 @@
   background-color: #f9fafb;
   font-family: "Courier New", monospace;
   padding: 6rem;
+  padding-bottom: 0;
 }
 
 /* Terminal Window Styles */
