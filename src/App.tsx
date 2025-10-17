@@ -12,13 +12,24 @@ function App() {
 
   return (
     <div className="app">
-      <nav className="mode-toggle">
+      <nav
+        className="mode-toggle"
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          right: 0,
+          zIndex: 1000,
+          backgroundColor: "white",
+          borderBottom: "1px solid #dee2e6",
+        }}
+      >
         <div
           style={{
             display: "flex",
             alignItems: "center",
             gap: "1rem",
-            padding: "1rem",
+            padding: "0.5rem",
           }}
         >
           <span
@@ -72,11 +83,13 @@ function App() {
       </nav>
 
       {mode === "terminal" ? (
-        <Container fluid>
+        <Container fluid style={{ paddingTop: "70px" }}>
           <Terminal />
         </Container>
       ) : (
-        <Portfolio />
+        <div style={{ paddingTop: "70px" }}>
+          <Portfolio />
+        </div>
       )}
     </div>
   );
