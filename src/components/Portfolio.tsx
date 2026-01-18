@@ -333,6 +333,75 @@ function Portfolio() {
                 textDecoration: "underline",
               }}
             >
+              Hawaii State (ETS) Project Reporting System | Full-Stack Web App
+              <a
+                href="https://github.com/HACC25/Cache-Money"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontSize: "2rem", paddingLeft: "1rem" }}
+              >
+                <i className="bi bi-github"></i>
+              </a>
+              <a
+                href="https://roomate-contract.web.app/ "
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontSize: "2rem", paddingLeft: "1rem" }}
+              >
+                <i className="bi bi-link-45deg"></i>
+              </a>
+              <br></br>
+              (Submission to Hawaii Annual Coding Challenge 2025)
+            </h3>
+            <p
+              style={{
+                color: "#2563eb",
+                fontSize: "0.875rem",
+                fontWeight: "600",
+                marginBottom: "0.75rem",
+              }}
+            >
+              October 2025
+            </p>
+            <p
+              className="info-value"
+              style={{
+                color: "#4b5563",
+                marginBottom: "1rem",
+                lineHeight: "1.6",
+              }}
+            >
+              Project submission to Hawaii Annual Coding Challenge 2025 -
+              Driving state project transparency objectives for Hawaii DETS.
+              Enabling data-centric decision making for state stakeholders
+              through end-to-end dashboard system with interactive
+              visualizations for real-time project performance tracking.
+            </p>
+
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
+              <span className="skill-badge">Project Management</span>
+              <span className="skill-badge">Typescript</span>
+              <span className="skill-badge">React</span>
+              <span className="skill-badge">Firebase</span>
+            </div>
+          </div>
+        </div>
+        <div style={{ marginTop: "3rem" }}>
+          <div
+            style={{
+              borderTop: "none",
+              padding: "1rem 0",
+            }}
+          >
+            <h3
+              style={{
+                fontSize: "1.125rem",
+                fontWeight: "bold",
+                color: "#1f2937",
+                marginBottom: "0.5rem",
+                textDecoration: "underline",
+              }}
+            >
               Livably | Full-Stack Web Application (powered by AI)
               <a
                 href="https://github.com/kparkok/livably"
