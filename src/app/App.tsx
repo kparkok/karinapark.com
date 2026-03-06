@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Container } from "react-bootstrap";
-import Terminal from "./components/Terminal";
-import Portfolio from "./components/Portfolio";
+import Terminal from "../components/Terminal";
+import Portfolio from "../components/Portfolio";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 function App() {

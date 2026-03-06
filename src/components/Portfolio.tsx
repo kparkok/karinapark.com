@@ -12,20 +12,29 @@ function Portfolio() {
   const roles = [
     {
       id: 1,
-      title: "Software Developer",
+      title: "Software Engineer",
       company: "Manoa Now",
       period: "August 2025 - Present",
       description:
-        "Redesigning, developing and maintaining web applications for the University of Hawaii community.",
-      tech: ["BLOX CMS", "HTML"],
+        "Full stack engineer building scalable Firebase-backed React/Next.js components supporting 20,000+ users",
+      tech: ["Typescript / React", "Firebase"],
     },
     {
       id: 2,
-      title: "DevOps Intern (Secret Clearance)",
+      title: "Consultant Intern",
+      company: "Pacific Point",
+      period: "January 2026 - Present",
+      description:
+        "Salesforce solutions engineer consultant intern working alongside Project Managers, Business Analysts, Support Team",
+      tech: ["Agile Methodologies", "Salesforce"],
+    },
+    {
+      id: 3,
+      title: "IT Engineer Intern (Secret Clearance)",
       company: "Pacific Shipyards International",
       period: "June 2025 - July 2025",
       description:
-        "Architected automated invoice processing system using Box.com AI API and Python, reducing manual processing time by over 50%. Managed IT infrastructure for 200+ users, troubleshooting devices and optimizing system performance",
+        "Built an automated invoice processing system using Python and Box.com AI API to extract metadata, route documents to approval offices, and organize files into designated inboxes, reducing manual processing time by 50% for 10,000+ yearly service rental invoices 100,000 hours saved",
       tech: ["BOX AI API", "Python"],
     },
   ];

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "houseAI",
+    "title": "Hawaii State AI Project",
+    "subtitle": "Senior capstone project; Collaborating with Hawaii state representatives to incorporate AI into state workflows",
+    "tech": "",
+    "github": "",
+    "live": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "hawaiiETS",
+    "title": "Hawaii State ETS Reporting System",
+    "subtitle": "Team submission to the 2025 Hawaii Annual Code Challenge building an IV&V vendor reporting system",
+    "tech": "Typescript",
+    "github": "https://github.com/HACC25/Cache-Money",
+    "live": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "livably",
+    "title": "Livably",
+    "subtitle": "Project using AI prompt engineering to analyze multi-user household preferences across 8 categories to automatically identify conflicts and generate personalized roommate agreements with actionable compromise rules",
+    "tech": "Typescript",
+    "github": "https://github.com/kparkok/livably",
+    "live": "",
+    "thumbnail": ""
+  }
+]
