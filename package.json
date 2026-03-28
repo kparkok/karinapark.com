@@ -20,11 +20,8 @@
   },
   "homepage": "https://github.com/kparkok/terminal-portfolio#readme",
   "dependencies": {
-    "bootstrap": "^5.3.8",
-    "bootstrap-icons": "^1.13.1",
     "lucide-react": "^0.546.0",
     "react": "^19.2.0",
-    "react-bootstrap": "^2.10.10",
     "react-dom": "^19.2.0",
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.13.0",
@@ -34,6 +31,10 @@
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "@vitejs/plugin-react": "^5.0.4",
+    "autoprefixer": "^10.4.27",
+    "baseline-browser-mapping": "^2.10.11",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^3.4.19",
     "typescript": "^5.9.3",
     "vite": "^7.1.10"
   }

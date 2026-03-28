@@ -4,7 +4,6 @@ import ProjectCarousel from "./ProjectCarousel";
 import { Github, Maximize2 } from "lucide-react";
 import TypeIt from "typeit-react";
 import Footer from "./Footer";
-import "bootstrap-icons/font/bootstrap-icons.css";
 
 function Portfolio() {
   const [expandedRole, setExpandedRole] = useState<number | null>(null);
@@ -45,106 +44,21 @@ function Portfolio() {
 
   return (
     <div className="portfolio-page">
-      {/* Terminal Window */}
-      <div className="terminal-window">
-        {/* Terminal Header */}
-        <div className="terminal-header">
-          <div className="terminal-buttons">
-            <div className="terminal-button red"></div>
-            <div className="terminal-button yellow"></div>
-            <div className="terminal-button green"></div>
-          </div>
-
-          {/* Search Bar */}
-          <div className="terminal-search-bar">
-            <span className="lock-icon">🔒</span>
-            <span className="url-text">karinapark.com</span>
-          </div>
-
-          <div className="terminal-maximize">
-            <Maximize2 size={14} />
-          </div>
-        </div>
-        {/* Window Content */}
-        <div className="terminal-content">
-          {/* Output */}
-          <div>
-            <h1 className="hero-title">
-              <TypeIt
-                options={{
-                  speed: 100,
-                  waitUntilVisible: true,
-                }}
-              >
-                Hi, I'm Karina!&nbsp;
-              </TypeIt>
-            </h1>
-            <div
-              style={{
-                marginLeft: "1.5rem",
-                marginTop: "3rem",
-                marginBottom: "2rem",
-              }}
-            >
-              <p className="info-line">
-                <span className="info-value">
-                  Computer Science Student @ University of Hawaiʻi at Mānoa
-                  <br />
-                  Software Developer @ Mānoa Now
-                </span>
-              </p>
-            </div>
-
-            {/* Buttons */}
-            <div
-              style={{
-                display: "flex",
-                gap: "1rem",
-                marginTop: "3rem",
-                marginBottom: "2rem",
-                flexWrap: "wrap",
-                justifyContent: "center",
-              }}
-            >
-              <a
-                href="/CSLinkedIn.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary-terminal"
-              >
-                View My Resume
-              </a>
-            </div>
-            {/* Links */}
-            <div>
-              <div
-                style={{
-                  display: "flex",
-                  gap: "1rem",
-                  marginTop: "0rem",
-                  flexWrap: "wrap",
-                  justifyContent: "center",
-                  fontSize: "1.5rem",
-                }}
-              >
-                <a
-                  href="https://github.com/kparkok"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="bi bi-github"></i>
-                </a>
-                <a
-                  href="https://linkedin.com/in/kparkokuna"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="bi bi-linkedin"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+      {/* Landing Hero */}
+      <h1 className="hero-title">
+        <TypeIt
+          options={{
+            speed: 100,
+            waitUntilVisible: true,
+          }}
+        >
+          Oh hey there! <br></br>I'm Karina!&nbsp;
+        </TypeIt>
+      </h1>
+      <div style={{ textAlign: "center" }}>
+        <p style={{ marginTop: "1rem" }}>
+          SOFTWARE ENGINEER ~ COMMUNITY BUILDER ~ SOMETIMES A SAILOR
+        </p>
       </div>
 
       <div style={{ maxWidth: "64rem", margin: "3rem auto" }}>
