@@ -1,18 +1,34 @@
-import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import Nav from "../components/Nav";
 import Hero from "../components/Hero";
+import About from "../components/About";
+import Experience from "../components/Experience";
+import Projects from "../components/Projects";
+import Footer from "../components/Footer";
+import ProjectPage from "../components/ProjectPage";
+
+function Portfolio() {
+  return (
+    <>
+      <Hero />
+      <About />
+      <Experience />
+      <Projects />
+      <Footer />
+    </>
+  );
+}
 
 function App() {
-  const [mode, setMode] = useState<"terminal" | "portfolio">("portfolio");
-
-  const toggleMode = () => {
-    setMode(mode === "terminal" ? "portfolio" : "terminal");
-  };
-
   return (
     <div className="min-h-screen">
       <Nav />
-      <Hero />
+      <div className="pt-[70px]">
+        <Routes>
+          <Route path="/" element={<Portfolio />} />
+          <Route path="/projects/:slug" element={<ProjectPage />} />
+        </Routes>
+      </div>
     </div>
   );
 }
