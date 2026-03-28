@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /* Reset only specific elements, not all descendants */
 body,
 h1,
