@@ -6,6 +6,7 @@ import Experience from "../components/Experience";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 import ProjectPage from "../components/ProjectPage";
+import Connect from "../components/Connect";
 
 function Portfolio() {
   return (
@@ -14,6 +15,7 @@ function Portfolio() {
       <About />
       <Experience />
       <Projects />
+      <Connect />
       <Footer />
     </>
   );
